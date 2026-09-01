@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Minimum font size guard for accessibility.
 - PHPUnit and Behat coverage.
 
+## [0.1.1] - 2026-09-01
+
+### Fixed
+- Added the missing `configuration` module. Without it the pickers were registered
+  but never added to the toolbar or the Format menu, so nothing appeared in the
+  editor. Verified against Moodle's own `editor_tiny` source.
+
 ## [0.1.0] - 2026-09-01
 
 ### Added

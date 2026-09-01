@@ -27,6 +27,7 @@ import {getPluginMetadata} from 'editor_tiny/utils';
 import {component, pluginName} from './common';
 import {register as registerOptions} from './options';
 import {getSetup as getCommandSetup} from './commands';
+import * as Configuration from './configuration';
 
 // eslint-disable-next-line no-async-promise-executor
 export default new Promise(async(resolve) => {
@@ -47,5 +48,5 @@ export default new Promise(async(resolve) => {
         return pluginMetadata;
     });
 
-    resolve([pluginName, pluginMetadata]);
+    resolve([pluginName, Configuration]);
 });
