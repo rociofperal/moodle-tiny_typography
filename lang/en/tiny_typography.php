@@ -50,6 +50,7 @@ $string['settings:lineheights'] = 'Line heights';
 $string['settings:lineheights_desc'] = 'One entry per line, written as <em>Label=value</em>. Unitless values such as <code>1.5</code> scale with the font size and are the safest choice.';
 
 // Capabilities.
+$string['typography:use'] = 'Use the typography controls in the editor';
 $string['typography:usefontsize'] = 'Change the font size in the editor';
 $string['typography:usefontfamily'] = 'Change the font family in the editor';
 $string['typography:uselineheight'] = 'Change the line height in the editor';

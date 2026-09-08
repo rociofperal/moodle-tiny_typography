@@ -23,7 +23,7 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-import {addToolbarButtons, addMenubarItem} from 'editor_tiny/utils';
+import {addToolbarSection, addToolbarButtons, addMenubarItem} from 'editor_tiny/utils';
 import {
     fontSizeButtonName,
     fontFamilyButtonName,
@@ -36,9 +36,13 @@ const buttons = [
     lineHeightButtonName,
 ];
 
+const sectionName = 'typography';
+
 export const configure = (instanceConfig) => {
+    const toolbar = addToolbarSection(instanceConfig.toolbar, sectionName, 'formatting', true);
+
     return {
-        toolbar: addToolbarButtons(instanceConfig.toolbar, 'formatting', buttons),
+        toolbar: addToolbarButtons(toolbar, sectionName, buttons),
         menu: addMenubarItem(instanceConfig.menu, 'format', '| ' + buttons.join(' ')),
     };
 };

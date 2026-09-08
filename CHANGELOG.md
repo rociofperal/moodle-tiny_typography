@@ -20,6 +20,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   but never added to the toolbar or the Format menu, so nothing appeared in the
   editor. Verified against Moodle's own `editor_tiny` source.
 
+## [0.1.5] - 2026-09-08
+
+### Fixed
+- The compiled `amd/build/plugin.min.js` now returns the promise from the AMD
+  factory. Without that return the module resolved to an exports object instead
+  of `[pluginName, Configuration]`, so `editor_tiny` filtered the plugin out and
+  the pickers never reached the toolbar. No error was raised anywhere.
+- The pickers now create their own `typography` toolbar section instead of
+  relying on `formatting` existing. `addToolbarButtons` silently discards the
+  buttons when the named section is not found.
+
+### Added
+- The `tiny/typography:use` capability that Moodle 5.x expects every TinyMCE
+  plugin to declare.
+
+### Verified
+- Installed and working on Moodle 5.2.2+: pickers render, "Large" produces
+  `font-size: 1.25rem`, settings page loads with all three lists.
+
 ## [0.1.0] - 2026-09-01
 
 ### Added
