@@ -13,12 +13,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Minimum font size guard for accessibility.
 - PHPUnit and Behat coverage.
 
-## [0.1.1] - 2026-09-01
+## [0.1.6] - 2026-09-08
 
-### Fixed
-- Added the missing `configuration` module. Without it the pickers were registered
-  but never added to the toolbar or the Format menu, so nothing appeared in the
-  editor. Verified against Moodle's own `editor_tiny` source.
+### Changed
+- `amd/build` is now generated with Moodle's own grunt task instead of being written
+  by hand. The hand-written files were the cause of the loading bug fixed in 0.1.5.
+- The plugin no longer adds its own line height entry to the Format menu. TinyMCE
+  already provides one there and Moodle leaves it in place, so a second entry only
+  duplicated it. The configured line heights are handed to TinyMCE through
+  `line_height_formats`, so the existing menu entry and this plugin's toolbar button
+  now offer the same list.
+
+### Added
+- README screenshots of the toolbar, the three pickers, the Format menu, the settings
+  page and the capabilities.
 
 ## [0.1.5] - 2026-09-08
 
@@ -38,6 +46,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Verified
 - Installed and working on Moodle 5.2.2+: pickers render, "Large" produces
   `font-size: 1.25rem`, settings page loads with all three lists.
+
+## [0.1.1] - 2026-09-01
+
+### Fixed
+- Added the missing `configuration` module. Without it the pickers were registered
+  but never added to the toolbar or the Format menu, so nothing appeared in the
+  editor. Verified against Moodle's own `editor_tiny` source.
 
 ## [0.1.0] - 2026-09-01
 
