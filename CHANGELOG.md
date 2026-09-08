@@ -13,6 +13,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Minimum font size guard for accessibility.
 - PHPUnit and Behat coverage.
 
+## [0.2.0] - 2026-09-08
+
+### Added
+- PHPUnit coverage for the plugin information class: the buttons and menu items offered
+  to the editor, the fallback to the shipped defaults, the configured lists, and the
+  per-control capabilities.
+- Behat coverage for the three toolbar controls and for the settings page.
+
+### Changed
+- The minimum supported version is now Moodle 4.5, which is the oldest version the
+  continuous integration actually tests. It previously claimed 4.1, which was never tested.
+- Continuous integration also runs against Moodle 5.2.
+- Maturity raised from alpha to beta.
+
+### Fixed
+- Coding style issues reported by the Moodle code checker, and the language strings are
+  now in the order the checker expects.
+
 ## [0.1.6] - 2026-09-08
 
 ### Changed

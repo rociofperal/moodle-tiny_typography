@@ -39,10 +39,9 @@ use editor_tiny\plugin_with_menuitems;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class plugininfo extends plugin implements
-        plugin_with_buttons,
-        plugin_with_menuitems,
-        plugin_with_configuration {
-
+    plugin_with_buttons,
+    plugin_with_configuration,
+    plugin_with_menuitems {
     /** @var string Default font size scale. Relative units keep user zoom and theme scaling intact. */
     public const DEFAULT_FONT_SIZES = "Extra small=0.75rem\n" .
         "Small=0.875rem\n" .

@@ -54,7 +54,7 @@ The font size and font family pickers are added to the Format menu as well, next
 
 ## Requirements
 
-Moodle 4.1 or later, with the TinyMCE editor enabled. Verified on Moodle 5.2.
+Moodle 4.5 or later, with the TinyMCE editor enabled. Continuous integration runs against Moodle 4.5 LTS, 5.0 and 5.2, on both PostgreSQL and MariaDB.
 
 ## Installation
 

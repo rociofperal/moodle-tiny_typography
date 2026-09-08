@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 use tiny_typography\plugininfo;
 
 if ($ADMIN->fulltree) {
-
     $settings->add(new admin_setting_configtextarea(
         'tiny_typography/fontsizes',
         get_string('settings:fontsizes', 'tiny_typography'),
