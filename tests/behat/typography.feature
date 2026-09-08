@@ -1,4 +1,4 @@
-@editor @editor_tiny @tiny_typography
+@editor @editor_tiny @tiny @tiny_typography
 Feature: Tiny Typography
   In order to lay out course content
   As a user
@@ -13,6 +13,7 @@ Feature: Tiny Typography
     And "Font family" button should exist in the "Description" TinyMCE editor
     And "Line height" button should exist in the "Description" TinyMCE editor
 
+  @javascript
   Scenario: The administrator can configure the three lists
     Given I log in as "admin"
     When I navigate to "Plugins > Text editors > TinyMCE editor > Tiny Typography" in site administration
