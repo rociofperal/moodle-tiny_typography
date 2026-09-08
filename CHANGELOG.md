@@ -24,7 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - The minimum supported version is now Moodle 4.5, which is the oldest version the
   continuous integration actually tests. It previously claimed 4.1, which was never tested.
-- Continuous integration also runs against Moodle 5.2.
+- Continuous integration also runs against Moodle 5.2, on PostgreSQL 16, which is the
+  minimum that version of Moodle accepts.
 - Maturity raised from alpha to beta.
 
 ### Fixed
