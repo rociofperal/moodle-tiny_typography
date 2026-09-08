@@ -2,7 +2,7 @@
 
 Font size, font family and line height controls for the Moodle TinyMCE editor — in a single plugin, free, GPL, with no licence key.
 
-Built and maintained by [FormaFlow](https://www.formaflow.es).
+A [FormaFlow](https://www.formaflow.es) plugin, written by [Rocio Fernandez Peral](https://rociofperal.com).
 
 ![The three pickers in the editor toolbar](docs/screenshots/01-toolbar.png)
 

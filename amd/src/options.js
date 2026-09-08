@@ -20,7 +20,7 @@
  * on this side, which keeps the option processors to plain strings.
  *
  * @module      tiny_typography/options
- * @copyright   2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright   2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

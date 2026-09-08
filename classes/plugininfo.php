@@ -18,7 +18,7 @@
  * Plugin information for the Tiny Typography plugin.
  *
  * @package    tiny_typography
- * @copyright  2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright  2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -35,7 +35,7 @@ use editor_tiny\plugin_with_menuitems;
  * Tiny Typography plugin information.
  *
  * @package    tiny_typography
- * @copyright  2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright  2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class plugininfo extends plugin implements

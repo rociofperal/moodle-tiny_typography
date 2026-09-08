@@ -17,7 +17,7 @@
  * Toolbar buttons and menu items for the Tiny Typography plugin.
  *
  * @module      tiny_typography/commands
- * @copyright   2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright   2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

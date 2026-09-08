@@ -21,7 +21,7 @@
  * individual users, so it implements the null provider.
  *
  * @package    tiny_typography
- * @copyright  2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright  2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ namespace tiny_typography\privacy;
  * Privacy provider implementation.
  *
  * @package    tiny_typography
- * @copyright  2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright  2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\null_provider {

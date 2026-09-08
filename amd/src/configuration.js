@@ -24,7 +24,7 @@
  * are handed to TinyMCE so that its entry offers the same values as this plugin's toolbar button.
  *
  * @module      tiny_typography/configuration
- * @copyright   2026 Rocio Fernandez Peral <rocio@rociofperal.com>
+ * @copyright   2026 FormaFlow (https://www.formaflow.es), Rocio Fernandez Peral (https://rociofperal.com)
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
