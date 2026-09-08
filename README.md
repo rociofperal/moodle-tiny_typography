@@ -2,6 +2,8 @@
 
 Font size, font family and line height controls for the Moodle TinyMCE editor — in a single plugin, free, GPL, with no licence key.
 
+Built and maintained by [FormaFlow](https://www.formaflow.es).
+
 ![The three pickers in the editor toolbar](docs/screenshots/01-toolbar.png)
 
 ## Why this exists
@@ -112,6 +114,12 @@ Do not edit the built files by hand.
 
 GNU GPL v3 or later, the same licence as Moodle itself.
 
+## Support
+
+Issues and feature requests: <https://github.com/rociofperal/moodle-tiny_typography/issues>
+
 ## Author
 
-Rocío Fernández Peral — <https://rociofperal.com>
+Written by Rocío Fernández Peral — <https://rociofperal.com>
+
+Maintained by **FormaFlow**, which builds Moodle and training-management tools for Spanish vocational training centres — <https://www.formaflow.es>
