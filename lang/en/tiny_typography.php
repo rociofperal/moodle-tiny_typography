@@ -38,10 +38,25 @@ $string['pluginname'] = 'Tiny Typography';
 $string['privacy:metadata'] = 'The Tiny Typography plugin does not store any personal data. It only reads the font options configured by the site administrator.';
 $string['removeformat'] = 'Clear typography';
 $string['settings:fontfamilies'] = 'Font families';
+$string['settings:fontfamilies_default'] = 'Theme default=inherit
+Sans serif=system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif
+Serif=Georgia, "Times New Roman", Times, serif
+Monospace=ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace
+Easy to read=Verdana, Tahoma, Arial, sans-serif';
 $string['settings:fontfamilies_desc'] = 'One entry per line, written as <em>Label=font stack</em>. Use <code>inherit</code> as the value to follow the site theme, which keeps authored content looking the same as the rest of the site. Only list fonts your learners are likely to have installed, or the text will fall back to something else on their device.';
 $string['settings:fontsizes'] = 'Font sizes';
+$string['settings:fontsizes_default'] = 'Extra small=0.75rem
+Small=0.875rem
+Normal=1rem
+Large=1.25rem
+Extra large=1.5rem
+Heading=2rem';
 $string['settings:fontsizes_desc'] = 'One entry per line, written as <em>Label=value</em>. The label is what authors see in the menu and the value is the CSS font size that gets applied. Relative units such as <code>rem</code> are recommended because they respect the reader\'s browser zoom and the theme\'s own scaling; fixed units such as <code>px</code> do not.';
 $string['settings:lineheights'] = 'Line heights';
+$string['settings:lineheights_default'] = 'Tight=1.15
+Normal=1.5
+Relaxed=1.75
+Double=2';
 $string['settings:lineheights_desc'] = 'One entry per line, written as <em>Label=value</em>. Unitless values such as <code>1.5</code> scale with the font size and are the safest choice.';
 $string['typography:use'] = 'Use the typography controls in the editor';
 $string['typography:usefontfamily'] = 'Change the font family in the editor';

@@ -13,6 +13,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Minimum font size guard for accessibility.
 - PHPUnit and Behat coverage.
 
+## [0.2.1] - 2026-09-09
+
+### Changed
+- The default font size, font family and line height lists now live in the language pack
+  instead of being hard-coded in PHP, so the labels a site starts with are translated
+  through AMOS along with the rest of the plugin. A Spanish site no longer sees
+  "Extra small" in the picker once a Spanish pack exists.
+- Trimmed the maintainer note in the README to a plain credit.
+
 ## [0.2.0] - 2026-09-08
 
 ### Added

@@ -31,7 +31,7 @@ if ($ADMIN->fulltree) {
         'tiny_typography/fontsizes',
         get_string('settings:fontsizes', 'tiny_typography'),
         get_string('settings:fontsizes_desc', 'tiny_typography'),
-        plugininfo::DEFAULT_FONT_SIZES,
+        plugininfo::get_default_fontsizes(),
         PARAM_RAW,
         60,
         8
@@ -41,7 +41,7 @@ if ($ADMIN->fulltree) {
         'tiny_typography/fontfamilies',
         get_string('settings:fontfamilies', 'tiny_typography'),
         get_string('settings:fontfamilies_desc', 'tiny_typography'),
-        plugininfo::DEFAULT_FONT_FAMILIES,
+        plugininfo::get_default_fontfamilies(),
         PARAM_RAW,
         60,
         8
@@ -51,7 +51,7 @@ if ($ADMIN->fulltree) {
         'tiny_typography/lineheights',
         get_string('settings:lineheights', 'tiny_typography'),
         get_string('settings:lineheights_desc', 'tiny_typography'),
-        plugininfo::DEFAULT_LINE_HEIGHTS,
+        plugininfo::get_default_lineheights(),
         PARAM_RAW,
         60,
         6

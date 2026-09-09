@@ -42,26 +42,36 @@ class plugininfo extends plugin implements
     plugin_with_buttons,
     plugin_with_configuration,
     plugin_with_menuitems {
-    /** @var string Default font size scale. Relative units keep user zoom and theme scaling intact. */
-    public const DEFAULT_FONT_SIZES = "Extra small=0.75rem\n" .
-        "Small=0.875rem\n" .
-        "Normal=1rem\n" .
-        "Large=1.25rem\n" .
-        "Extra large=1.5rem\n" .
-        "Heading=2rem";
+    /**
+     * The font size scale a site starts with.
+     *
+     * The list lives in the language pack so that translators can adapt the labels through AMOS.
+     * The values are relative units, which keep the reader's browser zoom and the theme's own
+     * scaling intact.
+     *
+     * @return string One "Label=value" entry per line.
+     */
+    public static function get_default_fontsizes(): string {
+        return get_string('settings:fontsizes_default', 'tiny_typography');
+    }
 
-    /** @var string Default font family list. "inherit" follows whatever the site theme uses. */
-    public const DEFAULT_FONT_FAMILIES = "Theme default=inherit\n" .
-        "Sans serif=system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif\n" .
-        "Serif=Georgia, \"Times New Roman\", Times, serif\n" .
-        "Monospace=ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", monospace\n" .
-        "Easy to read=Verdana, Tahoma, Arial, sans-serif";
+    /**
+     * The font family list a site starts with.
+     *
+     * @return string One "Label=font stack" entry per line.
+     */
+    public static function get_default_fontfamilies(): string {
+        return get_string('settings:fontfamilies_default', 'tiny_typography');
+    }
 
-    /** @var string Default line height list. */
-    public const DEFAULT_LINE_HEIGHTS = "Tight=1.15\n" .
-        "Normal=1.5\n" .
-        "Relaxed=1.75\n" .
-        "Double=2";
+    /**
+     * The line height list a site starts with.
+     *
+     * @return string One "Label=value" entry per line.
+     */
+    public static function get_default_lineheights(): string {
+        return get_string('settings:lineheights_default', 'tiny_typography');
+    }
 
     /**
      * Buttons this plugin makes available to the toolbar configuration.
@@ -134,15 +144,15 @@ class plugininfo extends plugin implements
 
         $fontsizes = isset($config->fontsizes) && trim($config->fontsizes) !== ''
             ? $config->fontsizes
-            : self::DEFAULT_FONT_SIZES;
+            : self::get_default_fontsizes();
 
         $fontfamilies = isset($config->fontfamilies) && trim($config->fontfamilies) !== ''
             ? $config->fontfamilies
-            : self::DEFAULT_FONT_FAMILIES;
+            : self::get_default_fontfamilies();
 
         $lineheights = isset($config->lineheights) && trim($config->lineheights) !== ''
             ? $config->lineheights
-            : self::DEFAULT_LINE_HEIGHTS;
+            : self::get_default_lineheights();
 
         return [
             'fontsizes' => $fontsizes,

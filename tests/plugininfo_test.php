@@ -80,9 +80,9 @@ final class plugininfo_test extends advanced_testcase {
 
         $config = plugininfo::get_plugin_configuration_for_context(context_system::instance(), [], []);
 
-        $this->assertSame(plugininfo::DEFAULT_FONT_SIZES, $config['fontsizes']);
-        $this->assertSame(plugininfo::DEFAULT_FONT_FAMILIES, $config['fontfamilies']);
-        $this->assertSame(plugininfo::DEFAULT_LINE_HEIGHTS, $config['lineheights']);
+        $this->assertSame(plugininfo::get_default_fontsizes(), $config['fontsizes']);
+        $this->assertSame(plugininfo::get_default_fontfamilies(), $config['fontfamilies']);
+        $this->assertSame(plugininfo::get_default_lineheights(), $config['lineheights']);
     }
 
     /**
@@ -112,7 +112,7 @@ final class plugininfo_test extends advanced_testcase {
 
         $config = plugininfo::get_plugin_configuration_for_context(context_system::instance(), [], []);
 
-        $this->assertSame(plugininfo::DEFAULT_FONT_SIZES, $config['fontsizes']);
+        $this->assertSame(plugininfo::get_default_fontsizes(), $config['fontsizes']);
     }
 
     /**

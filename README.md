@@ -78,6 +78,8 @@ Large=1.25rem
 
 The label is what authors see; the value is the CSS that gets applied. Lines without a separator are ignored rather than shown broken.
 
+The three lists ship as language strings rather than as hard-coded values, so the labels a site starts with are translated along with the rest of the plugin.
+
 ## Capabilities
 
 - `tiny/typography:use` — use the typography controls at all
@@ -122,4 +124,4 @@ Issues and feature requests: <https://github.com/rociofperal/moodle-tiny_typogra
 
 Written by Rocío Fernández Peral — <https://rociofperal.com>
 
-Maintained by **FormaFlow**, which builds Moodle and training-management tools for Spanish vocational training centres — <https://www.formaflow.es>
+Maintained by **FormaFlow** — <https://www.formaflow.es>

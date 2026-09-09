@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tiny_typography';
-$plugin->release   = '0.2.0';
-$plugin->version   = 2026090801;
+$plugin->release   = '0.2.1';
+$plugin->version   = 2026090900;
 $plugin->requires  = 2024100700; // Moodle 4.5.
 $plugin->maturity  = MATURITY_BETA;
